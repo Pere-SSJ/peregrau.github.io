@@ -27,6 +27,9 @@
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
+      <button class="nav-toggle" aria-label="Toggle Navigation">
+        <span class="hamburger"></span>
+      </button>
     </nav>
   </header>
 
@@ -87,7 +90,7 @@
             projects.
           </p>
           <div class="bio-buttons" style="margin-top: 28px;">
-            <a href="assets/Pere_Grau_CV.pdf" download="Pere_Grau_CV.pdf" class="btn btn-primary"
+            <a href="assets/CV_PereGrau.pdf" download="CV_PereGrau.pdf" class="btn btn-primary"
               style="display: inline-flex; align-items: center; gap: 8px;">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20px"
                 height="20px">
@@ -272,7 +275,7 @@
               <span class="tag">PHP</span>
               <span class="tag">CodeIgniter4</span>
               <span class="tag">Docker</span>
-              <span class="tag">MVC</span>
+              <span class="tag">JavaScript</span>
             </div>
             <h3>VMConect</h3>
             <p class="project-desc">A collaborative web application that allows students to publish posts, interact
@@ -343,12 +346,19 @@
               <span class="tag">Structures</span>
             </div>
             <h3>Song of Structures</h3>
-            <p class="project-desc">An interactive Java application designed to implement, analyze, and visualize complex non-linear data structures. Features custom graphical visualizations using Java Swing.<br><br>The project includes algorithms for classic graphs (BFS, DFS, Dijkstra, Kruskal, QuickSort) and self-balancing AVL search trees. It implements an R-Tree for spatial indexing with bounding box visualizations, custom Hash Tables with collision resolution, and individual module controllers to manage data flow and dataset sizes dynamically.</p>
+            <p class="project-desc">An interactive Java application designed to implement, analyze, and visualize
+              complex non-linear data structures. Features custom graphical visualizations using Java Swing.<br><br>The
+              project includes algorithms for classic graphs (BFS, DFS, Dijkstra, Kruskal, QuickSort) and self-balancing
+              AVL search trees. It implements an R-Tree for spatial indexing with bounding box visualizations, custom
+              Hash Tables with collision resolution, and individual module controllers to manage data flow and dataset
+              sizes dynamically.</p>
             <div class="project-actions">
-              <a href="https://github.com/Pere-SSJ/song-of-structures" target="_blank" class="project-action-btn btn-repo"
-                aria-label="GitHub Repository">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="16px" height="16px">
-                  <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+              <a href="https://github.com/Pere-SSJ/song-of-structures" target="_blank"
+                class="project-action-btn btn-repo" aria-label="GitHub Repository">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="16px"
+                  height="16px">
+                  <path
+                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
                 </svg>
                 Repository
               </a>
@@ -370,12 +380,19 @@
               <span class="tag">Threads</span>
             </div>
             <h3>La Ciutadela</h3>
-            <p class="project-desc">A multi-process and multi-threaded system simulation in C simulating communicating medieval kingdoms. Focuses on low-level systems programming and inter-process communication (IPC).<br><br>The system models a main process coordinated with multiple background threads and messenger child processes spawned via fork. It uses POSIX sockets for cross-machine kingdom networking, anonymous pipes for parent-child IPC, semaphores and mutexes for synchronization, and select-driven non-blocking IO with timeout recovery.</p>
+            <p class="project-desc">A multi-process and multi-threaded system simulation in C simulating communicating
+              medieval kingdoms. Focuses on low-level systems programming and inter-process communication
+              (IPC).<br><br>The system models a main process coordinated with multiple background threads and messenger
+              child processes spawned via fork. It uses POSIX sockets for cross-machine kingdom networking, anonymous
+              pipes for parent-child IPC, semaphores and mutexes for synchronization, and select-driven non-blocking IO
+              with timeout recovery.</p>
             <div class="project-actions">
               <a href="https://github.com/Pere-SSJ/SO_P1" target="_blank" class="project-action-btn btn-repo"
                 aria-label="GitHub Repository">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="16px" height="16px">
-                  <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="16px"
+                  height="16px">
+                  <path
+                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
                 </svg>
                 Repository
               </a>
@@ -387,7 +404,8 @@
         <!-- Proyecto: LFS & Ansible Systems Administration -->
         <article class="project-card">
           <div class="card-image-container">
-            <img src="assets/images/proyectos/lfs_ansible.png" alt="LFS & Ansible Systems Administration" class="project-image">
+            <img src="assets/images/proyectos/lfs_ansible.png" alt="LFS & Ansible Systems Administration"
+              class="project-image">
           </div>
           <div class="card-content">
             <div class="project-tags">
@@ -397,12 +415,20 @@
               <span class="tag">Bash</span>
             </div>
             <h3>LFS & Ansible Systems Administration</h3>
-            <p class="project-desc">A custom Linux operating system built by hand, step-by-step from scratch (LFS), and managed via an Apache CGI web panel and automated Ansible playbooks. Focuses on system administration and devops.<br><br>The project involves manually compiling and configuring a custom minimal LFS distribution (v12.2-Systemd) using official documentation, and integrating it with a web control panel powered by Apache and CGI Bash scripts to monitor resources, manage processes, configure iptables, and auto-mount storage via udev. Additionally, an Ansible control node automates software deployment, updates, and user compliance across client hosts.</p>
+            <p class="project-desc">A custom Linux operating system built by hand, step-by-step from scratch (LFS), and
+              managed via an Apache CGI web panel and automated Ansible playbooks. Focuses on system administration and
+              devops.<br><br>The project involves manually compiling and configuring a custom minimal LFS distribution
+              (v12.2-Systemd) using official documentation, and integrating it with a web control panel powered by
+              Apache and CGI Bash scripts to monitor resources, manage processes, configure iptables, and auto-mount
+              storage via udev. Additionally, an Ansible control node automates software deployment, updates, and user
+              compliance across client hosts.</p>
             <div class="project-actions">
               <a href="https://github.com/Pere-SSJ/ASO" target="_blank" class="project-action-btn btn-repo"
                 aria-label="GitHub Repository">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="16px" height="16px">
-                  <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="16px"
+                  height="16px">
+                  <path
+                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
                 </svg>
                 Repository
               </a>
@@ -424,19 +450,28 @@
               <span class="tag">PWM</span>
             </div>
             <h3>LSFarm</h3>
-            <p class="project-desc">An embedded farm simulation system (LSFarm) built in C for PIC microcontrollers, controlled via an interactive Joystick and a host Java GUI interface.<br><br>The firmware features a cooperative state machine architecture to optimize PIC resources (100% Flash, 97% RAM). It handles multi-channel ADC inputs (Joystick X/Y and LDR light sensor for animal sleep mechanics), custom software UART channels for serial communication with the Java host, and dynamic LCD notifications, with persistent state storage on EEPROM.</p>
+            <p class="project-desc">An embedded farm simulation system (LSFarm) built in C for PIC microcontrollers,
+              controlled via an interactive Joystick and a host Java GUI interface.<br><br>The firmware features a
+              cooperative state machine architecture to optimize PIC resources (100% Flash, 97% RAM). It handles
+              multi-channel ADC inputs (Joystick X/Y and LDR light sensor for animal sleep mechanics), custom software
+              UART channels for serial communication with the Java host, and dynamic LCD notifications, with persistent
+              state storage on EEPROM.</p>
             <div class="project-actions">
               <a href="https://github.com/Pere-SSJ/LSFarm" target="_blank" class="project-action-btn btn-repo"
                 aria-label="GitHub Repository">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="16px" height="16px">
-                  <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="16px"
+                  height="16px">
+                  <path
+                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
                 </svg>
                 Repository
               </a>
               <a href="https://youtu.be/dAy9nRWl6Ww" target="_blank" class="project-action-btn btn-repo"
                 aria-label="Demo Video" style="margin-left: 8px;">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="16px" height="16px">
-                  <path d="M23.498 6.163a3.003 3.003 0 0 0-2.11-2.11C19.518 3.545 12 3.545 12 3.545s-7.518 0-9.388.508a3.003 3.003 0 0 0-2.11 2.11C0 8.033 0 12 0 12s0 3.967.502 5.837a3.003 3.003 0 0 0 2.11 2.11c1.87.508 9.388.508 9.388.508s7.518 0 9.388-.508a3.003 3.003 0 0 0 2.11-2.11C24 15.967 24 12 24 12s0-3.967-.502-5.837zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="16px"
+                  height="16px">
+                  <path
+                    d="M23.498 6.163a3.003 3.003 0 0 0-2.11-2.11C19.518 3.545 12 3.545 12 3.545s-7.518 0-9.388.508a3.003 3.003 0 0 0-2.11 2.11C0 8.033 0 12 0 12s0 3.967.502 5.837a3.003 3.003 0 0 0 2.11 2.11c1.87.508 9.388.508 9.388.508s7.518 0 9.388-.508a3.003 3.003 0 0 0 2.11-2.11C24 15.967 24 12 24 12s0-3.967-.502-5.837zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
                 </svg>
                 Demo
               </a>
@@ -457,23 +492,29 @@
       <div class="contact-form-container">
         <p class="contact-form-title">Feel free to send me a message!.</p>
 
-        <form onsubmit="event.preventDefault();">
+        <form id="contact-form">
+          <input type="hidden" name="access_key" value="98f0f1fe-56d2-408a-bcfa-93021ac57802">
+          <input type="hidden" name="from_name" value="Pere Grau Portfolio">
+          <input type="hidden" name="subject" value="New Message from Portfolio">
+          
           <div class="form-group">
             <label for="contact-name">Name</label>
-            <input type="text" id="contact-name" class="form-control" placeholder="Name" required>
+            <input type="text" id="contact-name" name="name" class="form-control" placeholder="Name" required>
           </div>
 
           <div class="form-group">
             <label for="contact-email">E-mail</label>
-            <input type="email" id="contact-email" class="form-control" placeholder="e-mail" required>
+            <input type="email" id="contact-email" name="email" class="form-control" placeholder="e-mail" required>
           </div>
 
           <div class="form-group">
             <label for="contact-message">Message</label>
-            <textarea id="contact-message" class="form-control" rows="6" placeholder="Message" required></textarea>
+            <textarea id="contact-message" name="message" class="form-control" rows="6" placeholder="Message" required></textarea>
           </div>
 
           <button type="submit" class="btn btn-primary btn-submit">Send</button>
+          
+          <div id="contact-status" style="margin-top: 15px; text-align: center; font-weight: 600; font-size: 0.95rem; min-height: 24px;"></div>
         </form>
       </div>
 
@@ -500,11 +541,48 @@
 
   <!-- Footer -->
   <footer class="footer-main">
-    <p>&copy; 2026 Pere Grau Manent. Todos los derechos reservados.</p>
+    <p>Designed &amp; Built by Pere Grau &copy; 2026</p>
   </footer>
 
   <!-- Scripts -->
   <script>
+    // Helper function for matching skill filters with project tags
+    function matchFilter(filter, tag) {
+      filter = filter.trim().toLowerCase();
+      tag = tag.trim().toLowerCase();
+
+      if (filter === tag) return true;
+
+      if (filter === 'java' && tag === 'javascript') return false;
+      if (filter === 'javascript' && tag === 'java') return false;
+
+      if (filter === 'c') {
+        return tag === 'c' || tag === 'c++' || tag.startsWith('c ') || tag.startsWith('c/');
+      }
+
+      if (filter === 'sql') {
+        return tag.includes('sql') || tag === 'postgresql' || tag === 'mysql' || tag === 'sqlite';
+      }
+
+      if (filter === 'javascript' || filter === 'js') {
+        return tag === 'javascript' || tag === 'js';
+      }
+
+      if (filter === 'asm') {
+        return tag === 'asm' || tag === 'assembler' || tag === 'assembly';
+      }
+
+      if (filter === 'linux') {
+        return tag.includes('linux');
+      }
+
+      if (filter.length > 2 && tag.includes(filter)) {
+        return true;
+      }
+
+      return false;
+    }
+
     // Intersection Observer for Active Navbar Link
     const sections = document.querySelectorAll('section');
     const navLinks = document.querySelectorAll('.nav-links a');
@@ -562,10 +640,7 @@
 
             // Check match
             const matchesFilter = activeFilters.some(filter =>
-              cardTags.some(tag => {
-                // Exact match or contains relation (e.g. 'c' matches 'c++', 'sql' matches 'mysql')
-                return tag === filter || tag.includes(filter) || filter.includes(tag);
-              })
+              cardTags.some(tag => matchFilter(filter, tag))
             );
 
             if (matchesFilter) {
@@ -585,7 +660,7 @@
                   .map(active => active.querySelector('span').textContent.trim().toLowerCase());
 
                 const stillMatches = currentActiveFilters.some(filter =>
-                  cardTags.some(tag => tag === filter || tag.includes(filter) || filter.includes(tag))
+                  cardTags.some(tag => matchFilter(filter, tag))
                 );
 
                 if (currentActiveFilters.length > 0 && !stillMatches) {
@@ -611,6 +686,78 @@
         }
       });
     });
+
+    // Contact Form Submission (Web3Forms AJAX)
+    const contactForm = document.getElementById('contact-form');
+    const contactStatus = document.getElementById('contact-status');
+
+    if (contactForm) {
+      contactForm.addEventListener('submit', function (e) {
+        e.preventDefault();
+        
+        const formData = new FormData(contactForm);
+        const object = Object.fromEntries(formData);
+        const json = JSON.stringify(object);
+
+        const submitBtn = contactForm.querySelector('.btn-submit');
+        const originalText = submitBtn.textContent;
+        submitBtn.textContent = 'Sending...';
+        submitBtn.disabled = true;
+        contactStatus.textContent = '';
+
+        fetch('https://api.web3forms.com/submit', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+          },
+          body: json
+        })
+        .then(async (response) => {
+          let resJson = await response.json();
+          if (response.status === 200) {
+            contactStatus.style.color = '#38bdf8'; // Accent blue color matching portfolio system theme
+            contactStatus.textContent = 'Message sent successfully!';
+            contactForm.reset();
+          } else {
+            contactStatus.style.color = '#ef4444'; // Red error color
+            contactStatus.textContent = resJson.message || 'Something went wrong. Please try again.';
+          }
+        })
+        .catch(error => {
+          console.error(error);
+          contactStatus.style.color = '#ef4444';
+          contactStatus.textContent = 'Unable to send message. Please check your connection.';
+        })
+        .then(() => {
+          submitBtn.textContent = originalText;
+          submitBtn.disabled = false;
+          setTimeout(() => {
+            contactStatus.textContent = '';
+          }, 5000);
+        });
+      });
+    }
+
+    // Mobile Navigation Toggle
+    const navToggle = document.querySelector('.nav-toggle');
+    const navLinksList = document.querySelector('.nav-links');
+
+    if (navToggle && navLinksList) {
+      navToggle.addEventListener('click', () => {
+        navToggle.classList.toggle('open');
+        navLinksList.classList.toggle('open');
+      });
+
+      // Close menu when clicking on a link
+      const links = navLinksList.querySelectorAll('a');
+      links.forEach(link => {
+        link.addEventListener('click', () => {
+          navToggle.classList.remove('open');
+          navLinksList.classList.remove('open');
+        });
+      });
+    }
   </script>
 </body>
 
