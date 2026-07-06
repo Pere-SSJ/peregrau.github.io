@@ -1,59 +1,617 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pere Grau</title>
+  <title>Pere Grau | Portfolio</title>
+  <meta name="description"
+    content="Portfolio profesional de Pere Grau Manent, estudiante de Ingeniería Informática y desarrollador de software.">
   <link rel="stylesheet" href="assets/css/normalize.css">
-  <link rel="stylesheet" href="assets/css/styles-header.css">
-  <link rel="stylesheet" href="assets/css/styles-home.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="icon" type="image/png" href="assets/images/logo/logoGold.png">
 </head>
+
 <body>
+
+  <!-- Navbar Header -->
   <header class="header-main">
     <nav class="nav-main">
-      <a href="index.html" class="nav-logo">Pere Grau Manent</a>
+      <a href="#home" class="nav-brand">
+        <img src="assets\images\logo\logoGoldClean.png" alt="Logo de Pere Grau" class="nav-logo">
+        <span class="nav-brand-name">Pere Grau Manent</span>
+      </a>
       <ul class="nav-links">
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="proyectos.html">Proyectos</a></li>
-        <li><a href="about.html">Sobre mí</a></li>
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <main class="main-content">
-    <figure class="introduction">
-      <h1 class="title">Hola, soy Pere</h1>
-      <p class="typing-text"></p>
-    </figure>
+  <!-- Main Content Unified -->
+  <main>
 
-    <div class="start-button-container">
-      <a href="proyectos.html" class="start-button">VER PROYECTOS</a>
-    </div>
+    <!-- SECTION 1: HOME (Hero + About + Tech Stack) -->
+    <section id="home">
 
-    <div class="home-features-container">
-      <section class="features-grid">
-        
-        <div class="feature-card">
-          <h3>Arquitectura</h3>
-          <img src="assets\images\home\home-cpu.png" alt="Cpu icon" class="feature-icon">
+      <!-- Hero Area -->
+      <div class="hero-container">
+        <div class="hero-content">
+          <div class="hero-introduction">
+            <h1 class="hero-title">Hi! I'm Pere</h1>
+            <div class="hero-subtitle-container">
+              <p class="hero-subtitle">Software Engineer.</p>
+            </div>
+          </div>
+          <div class="hero-buttons">
+            <a href="https://github.com/Pere-SSJ" target="_blank" class="btn-social btn-github" aria-label="GitHub">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24px"
+                height="24px">
+                <path
+                  d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+              </svg>
+            </a>
+            <a href="https://www.linkedin.com/in/pere-grau-manent/" target="_blank" class="btn-social btn-linkedin"
+              aria-label="LinkedIn">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24px"
+                height="24px">
+                <path
+                  d="M20 19h-3v-5.6c0-3.37-4-3.11-4 0V19h-3V8h3v1.76c1.4-2.58 7-2.78 7 2.48V19z M6.5 6.75c-.97 0-1.75-.78-1.75-1.75s.78-1.75 1.75-1.75 1.75.78 1.75 1.75-.78 1.75-1.75 1.75z M8 19H5V8h3v11z" />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="hero-image-container">
+          <div class="hero-image-wrapper">
+            <img src="assets/images/about/profilePhoto.png" alt="Foto de Pere Grau" class="hero-profile-photo">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: ABOUT -->
+    <section id="about">
+      <!-- About Me Bio -->
+      <div class="bio-grid">
+        <div class="bio-text">
+          <h3>About me</h3>
+          <p>
+            I am a <strong>Software Engineering</strong> student in my final year at <strong>La Salle Ramón
+              Llull</strong>. I am passionate about building robust, efficient, and scalable digital solutions,
+            combining solid system architecture with a user-centric design approach.
+          </p>
+          <p>
+            I am always seeking new challenges that allow me to grow as a developer and contribute to impactful
+            projects.
+          </p>
+          <div class="bio-buttons" style="margin-top: 28px;">
+            <a href="assets/Pere_Grau_CV.pdf" download="Pere_Grau_CV.pdf" class="btn btn-primary"
+              style="display: inline-flex; align-items: center; gap: 8px;">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20px"
+                height="20px">
+                <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z" />
+              </svg>
+              Download CV
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: PROJECTS -->
+    <section id="projects">
+      <div class="section-header" style="margin-bottom: 40px;">
+        <h2 class="section-title">My Projects</h2>
+      </div>
+
+      <!-- Tech Stack (Moved from About) -->
+      <div class="tech-stack-container" style="margin-top: 0; margin-bottom: 60px;">
+        <div class="tech-title-container">
+          <p>Tap a skill to filter projects</p>
         </div>
 
-        <div class="feature-card">
-          <h3>Desarrollo</h3>
-          <img src="assets\images\home\home-dev.png" alt="Develop icon" class="feature-icon">
-        </div>
+        <div class="tech-grid">
+          <!-- Fila 1 -->
+          <div class="tech-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+            <span>Python</span>
+          </div>
+          <div class="tech-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java">
+            <span>Java</span>
+          </div>
+          <div class="tech-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C">
+            <span>C</span>
+          </div>
+          <div class="tech-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="SQL">
+            <span>SQL</span>
+          </div>
+          <div class="tech-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB">
+            <span>MongoDB</span>
+          </div>
+          <div class="tech-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-original.svg" alt="Firebase">
+            <span>Firebase</span>
+          </div>
 
-        <div class="feature-card">
-          <h3>Diseño</h3>
-          <img src="assets\images\home\home-design.png" alt="Design icon" class="feature-icon">
-        </div>
+          <!-- Fila 2 -->
+          <div class="tech-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5">
+            <span>HTML</span>
+          </div>
+          <div class="tech-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3">
+            <span>CSS</span>
+          </div>
+          <div class="tech-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+              alt="JavaScript">
+            <span>JavaScript</span>
+          </div>
+          <div class="tech-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React">
+            <span>React</span>
+          </div>
+          <div class="tech-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP">
+            <span>PHP</span>
+          </div>
+          <div class="tech-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker">
+            <span>Docker</span>
+          </div>
 
-      </section>
-    </div>
+          <!-- Fila 3 -->
+          <div class="tech-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-original.svg" alt="Android">
+            <span>Android</span>
+          </div>
+          <div class="tech-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma">
+            <span>Figma</span>
+          </div>
+          <div class="tech-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original.svg" alt="Jupyter">
+            <span>Jupyter</span>
+          </div>
+          <div class="tech-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/embeddedc/embeddedc-original.svg" alt="ASM">
+            <span>ASM</span>
+          </div>
+          <div class="tech-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++">
+            <span>C++</span>
+          </div>
+          <div class="tech-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Linux">
+            <span>Linux</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- Proyecto: Mecalux Challenge - HackUPC 2026 -->
+        <article class="project-card">
+          <div class="card-image-container">
+            <img src="assets/images/proyectos/mecalux.png" alt="Mecalux Challenge — HackUPC 2026" class="project-image">
+          </div>
+          <div class="card-content">
+            <div class="project-tags">
+              <span class="tag">Python</span>
+              <span class="tag">Flask</span>
+              <span class="tag">GA</span>
+              <span class="tag">SA</span>
+            </div>
+            <h3>Mecalux Challenge — HackUPC 2026</h3>
+            <p class="project-desc">Warehouse layout optimization using genetic algorithms and simulated annealing,
+              developed for the Mecalux Challenge at HackUPC 2026. Minimizes travel time and maximizes space efficiency
+              with a Flask web interface for real-time visualization and interactive control.<br><br>The system features
+              warehouse layout and constraint loading, configuration optimization using Genetic Algorithms (GA) and
+              Simulated Annealing (SA), and a web server with a REST API and browser UI for real-time visualization.</p>
+            <div class="project-actions">
+              <a href="https://github.com/Pere-SSJ/HackUPC_2026" target="_blank" class="project-action-btn btn-repo"
+                aria-label="GitHub Repository">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="16px"
+                  height="16px">
+                  <path
+                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                </svg>
+                Repository
+              </a>
+              <button class="project-action-link btn-read-more">Read More</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Proyecto: OLYMPUS Compiler -->
+        <article class="project-card">
+          <div class="card-image-container">
+            <img src="assets/images/proyectos/olympus.png" alt="OLYMPUS Compiler" class="project-image">
+          </div>
+          <div class="card-content">
+            <div class="project-tags">
+              <span class="tag">Java</span>
+              <span class="tag">ASM</span>
+              <span class="tag">Compiler</span>
+            </div>
+            <h3>OLYMPUS Compiler</h3>
+            <p class="project-desc">A custom compiler built in Java that translates OLYMPUS source code into MIPS
+              assembly language for simulation in tools like MARS.<br><br>The compiler features a multi-stage frontend
+              with a scanner, parser, and semantic analyzer that translates code into three-address intermediate code
+              (TAC) and final MIPS assembly. For memory efficiency, it implements dynamic stack frame management using
+              $sp and $fp, variable compaction (packing consecutive 1-byte chars and booleans), and dynamic padding to
+              maintain 4-byte alignment for integers while adapting MIPS load/store word and byte instructions.</p>
+            <div class="project-actions">
+              <a href="https://bitbucket.org/lasalleurl/llpr-2526-gi-g7/src/main/" target="_blank"
+                class="project-action-btn btn-repo" aria-label="Bitbucket Repository">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="16px"
+                  height="16px">
+                  <path
+                    d="M22.3 3.4c-.2-.4-.6-.7-1-.7H2.7c-.5 0-.9.3-1 .7L0 20.3c-.1.5.2 1 .7 1.1.1 0 .1 0 .2 0h22.2c.5 0 1-.4 1-1l-1.8-17zM15.5 15H8.5L6.9 8.6h10.2L15.5 15z" />
+                </svg>
+                Repository
+              </a>
+              <button class="project-action-link btn-read-more">Read More</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Proyecto: VMConect -->
+        <article class="project-card">
+          <div class="card-image-container">
+            <img src="assets/images/proyectos/vmconect.png" alt="VMConect" class="project-image">
+          </div>
+          <div class="card-content">
+            <div class="project-tags">
+              <span class="tag">PHP</span>
+              <span class="tag">CodeIgniter4</span>
+              <span class="tag">Docker</span>
+              <span class="tag">MVC</span>
+            </div>
+            <h3>VMConect</h3>
+            <p class="project-desc">A collaborative web application that allows students to publish posts, interact
+              through likes and comments, and optimize their text using an integrated AI helper.<br><br>The application
+              separates the frontend from a robust REST API backend using the CodeIgniter 4 framework and MVC
+              architecture. It features automatic language detection (English/Spanish), dynamic content updates, and a
+              dockerized environment with Nginx and MySQL. An AI text improvement endpoint interacts with external LLM
+              services using Guzzle.</p>
+            <div class="project-actions">
+              <a href="https://bitbucket.org/lasalleurl/grupo-40/src/dev/" target="_blank"
+                class="project-action-btn btn-repo" aria-label="Bitbucket Repository">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="16px"
+                  height="16px">
+                  <path
+                    d="M22.3 3.4c-.2-.4-.6-.7-1-.7H2.7c-.5 0-.9.3-1 .7L0 20.3c-.1.5.2 1 .7 1.1.1 0 .1 0 .2 0h22.2c.5 0 1-.4 1-1l-1.8-17zM15.5 15H8.5L6.9 8.6h10.2L15.5 15z" />
+                </svg>
+                Repository
+              </a>
+              <button class="project-action-link btn-read-more">Read More</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Proyecto: Minecraft Survival Expert System -->
+        <article class="project-card">
+          <div class="card-image-container">
+            <img src="assets/images/proyectos/minecraft.png" alt="Minecraft Survival Expert System"
+              class="project-image">
+          </div>
+          <div class="card-content">
+            <div class="project-tags">
+              <span class="tag">Python</span>
+              <span class="tag">Java</span>
+              <span class="tag">NLP</span>
+              <span class="tag">API</span>
+            </div>
+            <h3>Minecraft Expert System Chatbot</h3>
+            <p class="project-desc">An interactive expert system integrated inside Minecraft using Natural Language
+              Processing (NLP). It features a client-server architecture communicating via a REST API.<br><br>The
+              backend features a Flask NLP server in Python that extracts player intent and keywords to run inference
+              engines. The client is a custom Java Fabric mod that captures real-time player context (biomes,
+              coordinates, inventory, target blocks) and communicates with the backend via REST API commands.</p>
+            <div class="project-actions">
+              <a href="https://github.com/R4-UL/Minecraft-Chatbot" target="_blank" class="project-action-btn btn-repo"
+                aria-label="GitHub Repository">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="16px"
+                  height="16px">
+                  <path
+                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                </svg>
+                Repository
+              </a>
+              <button class="project-action-link btn-read-more">Read More</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Proyecto: Song of Structures -->
+        <article class="project-card">
+          <div class="card-image-container">
+            <img src="assets/images/proyectos/structures.png" alt="Song of Structures" class="project-image">
+          </div>
+          <div class="card-content">
+            <div class="project-tags">
+              <span class="tag">Java</span>
+              <span class="tag">Swing</span>
+              <span class="tag">Algorithms</span>
+              <span class="tag">Structures</span>
+            </div>
+            <h3>Song of Structures</h3>
+            <p class="project-desc">An interactive Java application designed to implement, analyze, and visualize complex non-linear data structures. Features custom graphical visualizations using Java Swing.<br><br>The project includes algorithms for classic graphs (BFS, DFS, Dijkstra, Kruskal, QuickSort) and self-balancing AVL search trees. It implements an R-Tree for spatial indexing with bounding box visualizations, custom Hash Tables with collision resolution, and individual module controllers to manage data flow and dataset sizes dynamically.</p>
+            <div class="project-actions">
+              <a href="https://github.com/Pere-SSJ/song-of-structures" target="_blank" class="project-action-btn btn-repo"
+                aria-label="GitHub Repository">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="16px" height="16px">
+                  <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                </svg>
+                Repository
+              </a>
+              <button class="project-action-link btn-read-more">Read More</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Proyecto: La Ciutadela -->
+        <article class="project-card">
+          <div class="card-image-container">
+            <img src="assets/images/proyectos/ciutadela.png" alt="La Ciutadela" class="project-image">
+          </div>
+          <div class="card-content">
+            <div class="project-tags">
+              <span class="tag">C</span>
+              <span class="tag">IPC</span>
+              <span class="tag">Networking</span>
+              <span class="tag">Threads</span>
+            </div>
+            <h3>La Ciutadela</h3>
+            <p class="project-desc">A multi-process and multi-threaded system simulation in C simulating communicating medieval kingdoms. Focuses on low-level systems programming and inter-process communication (IPC).<br><br>The system models a main process coordinated with multiple background threads and messenger child processes spawned via fork. It uses POSIX sockets for cross-machine kingdom networking, anonymous pipes for parent-child IPC, semaphores and mutexes for synchronization, and select-driven non-blocking IO with timeout recovery.</p>
+            <div class="project-actions">
+              <a href="https://github.com/Pere-SSJ/SO_P1" target="_blank" class="project-action-btn btn-repo"
+                aria-label="GitHub Repository">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="16px" height="16px">
+                  <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                </svg>
+                Repository
+              </a>
+              <button class="project-action-link btn-read-more">Read More</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Proyecto: LFS & Ansible Systems Administration -->
+        <article class="project-card">
+          <div class="card-image-container">
+            <img src="assets/images/proyectos/lfs_ansible.png" alt="LFS & Ansible Systems Administration" class="project-image">
+          </div>
+          <div class="card-content">
+            <div class="project-tags">
+              <span class="tag">Linux</span>
+              <span class="tag">Ansible</span>
+              <span class="tag">Apache</span>
+              <span class="tag">Bash</span>
+            </div>
+            <h3>LFS & Ansible Systems Administration</h3>
+            <p class="project-desc">A custom Linux operating system built by hand, step-by-step from scratch (LFS), and managed via an Apache CGI web panel and automated Ansible playbooks. Focuses on system administration and devops.<br><br>The project involves manually compiling and configuring a custom minimal LFS distribution (v12.2-Systemd) using official documentation, and integrating it with a web control panel powered by Apache and CGI Bash scripts to monitor resources, manage processes, configure iptables, and auto-mount storage via udev. Additionally, an Ansible control node automates software deployment, updates, and user compliance across client hosts.</p>
+            <div class="project-actions">
+              <a href="https://github.com/Pere-SSJ/ASO" target="_blank" class="project-action-btn btn-repo"
+                aria-label="GitHub Repository">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="16px" height="16px">
+                  <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                </svg>
+                Repository
+              </a>
+              <button class="project-action-link btn-read-more">Read More</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Proyecto: LSFarm -->
+        <article class="project-card">
+          <div class="card-image-container">
+            <img src="assets/images/proyectos/lsfarm.png" alt="LSFarm" class="project-image">
+          </div>
+          <div class="card-content">
+            <div class="project-tags">
+              <span class="tag">C</span>
+              <span class="tag">Java</span>
+              <span class="tag">Embedded</span>
+              <span class="tag">PWM</span>
+            </div>
+            <h3>LSFarm</h3>
+            <p class="project-desc">An embedded farm simulation system (LSFarm) built in C for PIC microcontrollers, controlled via an interactive Joystick and a host Java GUI interface.<br><br>The firmware features a cooperative state machine architecture to optimize PIC resources (100% Flash, 97% RAM). It handles multi-channel ADC inputs (Joystick X/Y and LDR light sensor for animal sleep mechanics), custom software UART channels for serial communication with the Java host, and dynamic LCD notifications, with persistent state storage on EEPROM.</p>
+            <div class="project-actions">
+              <a href="https://github.com/Pere-SSJ/LSFarm" target="_blank" class="project-action-btn btn-repo"
+                aria-label="GitHub Repository">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="16px" height="16px">
+                  <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                </svg>
+                Repository
+              </a>
+              <a href="https://youtu.be/dAy9nRWl6Ww" target="_blank" class="project-action-btn btn-repo"
+                aria-label="Demo Video" style="margin-left: 8px;">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="16px" height="16px">
+                  <path d="M23.498 6.163a3.003 3.003 0 0 0-2.11-2.11C19.518 3.545 12 3.545 12 3.545s-7.518 0-9.388.508a3.003 3.003 0 0 0-2.11 2.11C0 8.033 0 12 0 12s0 3.967.502 5.837a3.003 3.003 0 0 0 2.11 2.11c1.87.508 9.388.508 9.388.508s7.518 0 9.388-.508a3.003 3.003 0 0 0 2.11-2.11C24 15.967 24 12 24 12s0-3.967-.502-5.837zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                </svg>
+                Demo
+              </a>
+              <button class="project-action-link btn-read-more" style="margin-left: auto;">Read More</button>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- SECTION 4: CONTACT -->
+    <section id="contact">
+      <div class="section-header">
+        <h2 class="section-title">Contact</h2>
+      </div>
+
+      <div class="contact-form-container">
+        <p class="contact-form-title">Feel free to send me a message!.</p>
+
+        <form onsubmit="event.preventDefault();">
+          <div class="form-group">
+            <label for="contact-name">Name</label>
+            <input type="text" id="contact-name" class="form-control" placeholder="Name" required>
+          </div>
+
+          <div class="form-group">
+            <label for="contact-email">E-mail</label>
+            <input type="email" id="contact-email" class="form-control" placeholder="e-mail" required>
+          </div>
+
+          <div class="form-group">
+            <label for="contact-message">Message</label>
+            <textarea id="contact-message" class="form-control" rows="6" placeholder="Message" required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-submit">Send</button>
+        </form>
+      </div>
+
+      <div class="contact-social-footer">
+        <a href="https://www.linkedin.com/in/pere-grau-manent/" target="_blank" class="contact-social-link"
+          aria-label="LinkedIn">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20px" height="20px">
+            <path
+              d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zM8 19H5V8h3v11zM6.5 6.75c-.97 0-1.75-.78-1.75-1.75s.78-1.75 1.75-1.75 1.75.78 1.75 1.75-.78 1.75-1.75 1.75zm13.5 12.25h-3v-5.6c0-3.37-4-3.11-4 0V19h-3V8h3v1.76c1.4-2.58 7-2.78 7 2.48V19z" />
+          </svg>
+          LinkedIn
+        </a>
+        <a href="mailto:pere.grau05@gmail.com" class="contact-social-link" aria-label="Gmail">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20px" height="20px">
+            <path
+              d="M24 5.457v13.909c0 .904-.732 1.634-1.637 1.634h-2.23V8.344l-8.13 5.09-8.13-5.09v12.656h-2.23c-.905 0-1.637-.73-1.637-1.634v-13.91c0-.586.31-.122.846.22l11.15 6.98 11.15-6.98c.536-.342.846-.806.846-.22z" />
+          </svg>
+          Gmail
+        </a>
+      </div>
+    </section>
+
   </main>
 
+  <!-- Footer -->
+  <footer class="footer-main">
+    <p>&copy; 2026 Pere Grau Manent. Todos los derechos reservados.</p>
+  </footer>
+
+  <!-- Scripts -->
   <script>
-    document.querySelector(".typing-text").textContent = "Estudiante de ingeniería informática";
+    // Intersection Observer for Active Navbar Link
+    const sections = document.querySelectorAll('section');
+    const navLinks = document.querySelectorAll('.nav-links a');
+
+    const observerOptions = {
+      root: null,
+      rootMargin: '-30% 0px -60% 0px', // Trigger activation near the center of the viewport
+      threshold: 0
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const sectionId = entry.target.getAttribute('id');
+
+          navLinks.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href') === `#${sectionId}`) {
+              link.classList.add('active');
+            }
+          });
+        }
+      });
+    }, observerOptions);
+
+    sections.forEach(section => observer.observe(section));
+
+    // Tech Stack Project Filtering Logic
+    const techItems = document.querySelectorAll('.tech-item');
+    const projectCards = document.querySelectorAll('.project-card');
+
+    techItems.forEach(item => {
+      item.addEventListener('click', () => {
+        // Toggle selection state
+        item.classList.toggle('active-filter');
+
+        // Collect names of all active tech item filters (lowercased)
+        const activeFilters = Array.from(document.querySelectorAll('.tech-item.active-filter'))
+          .map(active => active.querySelector('span').textContent.trim().toLowerCase());
+
+        // Process project cards visibility
+        projectCards.forEach(card => {
+          if (activeFilters.length === 0) {
+            // No filters selected: display all projects
+            card.style.display = 'flex';
+            setTimeout(() => {
+              card.style.opacity = '1';
+              card.style.transform = 'scale(1)';
+              card.style.pointerEvents = 'all';
+            }, 50);
+          } else {
+            // Get tags of this project (lowercased)
+            const cardTags = Array.from(card.querySelectorAll('.project-tags .tag'))
+              .map(tag => tag.textContent.trim().toLowerCase());
+
+            // Check match
+            const matchesFilter = activeFilters.some(filter =>
+              cardTags.some(tag => {
+                // Exact match or contains relation (e.g. 'c' matches 'c++', 'sql' matches 'mysql')
+                return tag === filter || tag.includes(filter) || filter.includes(tag);
+              })
+            );
+
+            if (matchesFilter) {
+              card.style.display = 'flex';
+              setTimeout(() => {
+                card.style.opacity = '1';
+                card.style.transform = 'scale(1)';
+                card.style.pointerEvents = 'all';
+              }, 50);
+            } else {
+              card.style.opacity = '0';
+              card.style.transform = 'scale(0.95)';
+              card.style.pointerEvents = 'none';
+              setTimeout(() => {
+                // If it is still not matching, hide display
+                const currentActiveFilters = Array.from(document.querySelectorAll('.tech-item.active-filter'))
+                  .map(active => active.querySelector('span').textContent.trim().toLowerCase());
+
+                const stillMatches = currentActiveFilters.some(filter =>
+                  cardTags.some(tag => tag === filter || tag.includes(filter) || filter.includes(tag))
+                );
+
+                if (currentActiveFilters.length > 0 && !stillMatches) {
+                  card.style.display = 'none';
+                }
+              }, 300); // 300ms matches CSS transition-smooth
+            }
+          }
+        });
+      });
+    });
+
+    // Read More / Read Less Toggle for Project Cards
+    const readMoreBtns = document.querySelectorAll('.btn-read-more');
+    readMoreBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const desc = btn.closest('.card-content').querySelector('.project-desc');
+        desc.classList.toggle('expanded');
+        if (desc.classList.contains('expanded')) {
+          btn.textContent = 'Read Less';
+        } else {
+          btn.textContent = 'Read More';
+        }
+      });
+    });
   </script>
 </body>
+
 </html>
